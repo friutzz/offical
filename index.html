@@ -5,8 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Fruit</title>
+  <style>
+  .index {
+    display: flex;
+    /*justify-content: center;*/
+    height: 95vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .download a {
+    color: #66c977;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  .index img {
+    width: 50%;
+    max-width: 200px;
+    margin: 50px 0 50px 0px;
+  }
+  .tip {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 25px;
+  }
+</style>
 </head>
 <body>
-  <h1>Fruit</h1>
+  <div class="index">
+    <img src="{{ asset('img/logo.jpg') }}">
+    <div class="download">
+      <a href="{{ asset('apk/fruit.apk') }}">安卓下载</a>
+    </div>
+    <div class="tip">
+      本应用暂时只有安卓版本，IOS版本将会在短期内推出，敬请期待。
+    </div>
+  </div>
 </body>
 </html>
